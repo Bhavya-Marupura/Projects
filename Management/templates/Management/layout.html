@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="shortcut icon" type="image/ico" href="{% static 'Management/image.ico' %}"/>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <title>
+        {% block title %}
+        {{ page_title|default:"Payroll Management System" }}
+        {% endblock title %}
+    </title>
+      <link href="{% static 'Management/styles.css' %}" rel="stylesheet">
+   </head>
+   <body>
+      <div id="root">
+         <div class="container">
+            <div class="sidebar user">
+               <div>
+                  <a href="{% url 'Management:Home' %}">
+                     <div class="avatar shine">
+                        <img src="{% static 'Management/logo.jpeg' %}" class="profile" alt="Company Picture">
+                     </div>
+                  </a>
+                  <h1>Payroll Management System</h1><br>
+                  <h3>ITL LAB Mini Project</h3>
+                  <p>A Reliable Management System made for the Elites.</p>
+               </div>
+               <div>
+                  <h3>Favorites:</h3>
+                  <div class="skills">
+                     {% for fav in favorites %}
+                     <span>{{ fav }}</span>
+                     {% empty %}
+                     <p>No Such Favorites</p>
+                     {% endfor %}
+                  </div>
+               </div>
+               <div class="details">
+                  <h3>About Developer:</h3>
+                  <div><i class="fab fa-github-alt"></i><a href="https://github.com/Bhavya-Marupura" target="_blank" rel="noopener noreferrer" style="color: inherit;">@Bhavya-Marupura</a></div>
+                  <div><i class="fas fa-building"></i><a href="https://www.manipal.edu/mit.html" target="_blank" rel="noopener noreferrer" style="color: inherit;">Manipal Institute of Technology</a></div>
+                  <div><i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Manipal+Institute+of+Technology/@13.3526078,74.7902178,16.92z/data=!4m6!3m5!1s0x3bbca4a7d2c4edb7:0x8d588d4fb81d861f!8m2!3d13.3525321!4d74.7928224!16zL20vMDh0Zmsw?entry=ttu" target="_blank" rel="noopener noreferrer" style="color: inherit;">Manipal, Karnataka</a></div>
+               </div>
+            </div>
+            <div class="main">
+               <div class="repoContainer">
+                  {% block body %}
+                  {% endblock body %}
+               </div>
+               <div class="repoContainer">
+                  {% block sec_body %}
+                  {% endblock sec_body %}
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

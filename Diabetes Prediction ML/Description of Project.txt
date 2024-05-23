@@ -1,0 +1,9 @@
+The objective of this project is to predict a person's risk of having diabetes by utilizing Support Vector Machine (SVM) algorithms in an intuitive web application interface. 
+This application attempts to provide accurate and reasonable predictions by using input health parameters (number of pregnancies, blood pressure, glucose level, insulin level, age, 
+skin thickness, diabetes pedigree function, etc.) that users provide via a graphical user interface (GUI). By combining the power of SVM with user-friendly web technology, the project 
+endeavors to enhance accessibility to predictive healthcare tools. The seamless integration of machine learning into a web application facilitates a simple and effective method for 
+diabetes prediction, which could aid people in making accurate choices regarding their health. By promoting preventive measures and giving people early awareness, 
+this initiative hopes to support proactive healthcare. 
+
+
+Keywords— Diabetes Prediction, Machine Learning, Support Vector Machine, Graphical User Interface, Web Application using Streamlit, Health Sector.

@@ -1,0 +1,8 @@
+In this study, we present a comprehensive approach to driver drowsiness detection using the Ultralytics YOLO implementation, a robust production-ready framework built on PyTorch. 
+Leveraging the base YOLO model trained on the COCO dataset with 80 different classes, we fine-tuned the model for drowsiness detection. Our method involves real-time detection using
+a webcam to determine whether the driver is awake or drowsy, with potential applications in automotive safety systems. We also discuss the installation process of Ultralytics YOLO, 
+labeling images in YOLO format, and the overall workflow of our approach. Our findings demonstrate the effectiveness of using YOLO for real-time drowsiness detection, highlighting its 
+practicality and potential for implementation in various safety-critical environments. This research aims to contribute to enhancing driver safety, particularly in automotive applications.
+
+
+Keywords— Deep Learning, PyTorch, Ultralytics YOLOv5, Drowsiness Detection, Computer Vision, Image Labelling, OpenCV, COCO Dataset, Real-Time Detection
